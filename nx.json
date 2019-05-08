@@ -1,0 +1,24 @@
+{
+  "npmScope": "reibo-shopping-list",
+  "implicitDependencies": {
+    "angular.json": "*",
+    "package.json": "*",
+    "tsconfig.json": "*",
+    "tslint.json": "*",
+    "nx.json": "*"
+  },
+  "projects": {
+    "reibo-shopping-list": {
+      "tags": []
+    },
+    "reibo-shopping-list-e2e": {
+      "tags": []
+    },
+    "api": {
+      "tags": []
+    },
+    "api-interface": {
+      "tags": []
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "extends": "../../tslint.json",
+  "rules": {
+    "directive-selector": [
+      true,
+      "attribute",
+      "reibo-shopping-list",
+      "camelCase"
+    ],
+    "component-selector": [true, "element", "reibo-shopping-list", "kebab-case"]
+  }
+}
