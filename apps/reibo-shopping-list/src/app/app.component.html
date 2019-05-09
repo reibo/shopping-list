@@ -1,8 +1,7 @@
-<div style="text-align:center">
-  <h1>Welcome to reibo-shopping-list!</h1>
-  <img
-    width="450"
-    src="https://raw.githubusercontent.com/nrwl/nx/master/nx-logo.png"
-  />
-</div>
-<div>Message: {{ hello$ | async | json }}</div>
+<mat-toolbar>
+  International Javascript Conference - Shopping list!
+  <div class="spacer"></div>
+  <a routerLink="/shop-list" mat-button>MyList</a>
+  <a routerLink="/article" mat-button>Articles</a>
+</mat-toolbar>
+<router-outlet></router-outlet>

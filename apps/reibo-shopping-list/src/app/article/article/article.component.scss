@@ -1,0 +1,10 @@
+mat-card{
+  max-width: calc(100% / 5);
+  margin: 8px;
+}
+
+:host{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
