@@ -8,7 +8,7 @@ export const environment = {
     host: 'localhost',
     port: 3307,
     username: 'root',
-    password: 'test',
+    password: 'fluvia',
     database: 'shopping',
   },
 };
