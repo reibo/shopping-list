@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/apps/reibo-shopping-list",
+            "outputPath": "dist/browser",
             "index": "apps/reibo-shopping-list/src/index.html",
             "main": "apps/reibo-shopping-list/src/main.ts",
             "polyfills": "apps/reibo-shopping-list/src/polyfills.ts",
@@ -96,6 +96,24 @@
             "jestConfig": "apps/reibo-shopping-list/jest.config.js",
             "tsConfig": "apps/reibo-shopping-list/tsconfig.spec.json",
             "setupFile": "apps/reibo-shopping-list/src/test-setup.ts"
+          }
+        },
+        "server": {
+          "builder": "@angular-devkit/build-angular:server",
+          "options": {
+            "outputPath": "dist/server",
+            "main": "apps/reibo-shopping-list/src/main.server.ts",
+            "tsConfig": "apps/reibo-shopping-list/tsconfig.server.json"
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "apps/reibo-shopping-list/src/environments/environment.ts",
+                  "with": "apps/reibo-shopping-list/src/environments/environment.prod.ts"
+                }
+              ]
+            }
           }
         }
       }

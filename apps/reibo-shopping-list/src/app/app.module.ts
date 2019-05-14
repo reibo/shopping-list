@@ -11,7 +11,7 @@ import { CustomHttpInterceptor } from './interceptor/http.interceptor';
 @NgModule({
   declarations: [AppComponent],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     HttpClientModule,
     BrowserAnimationsModule,
     MatToolbarModule,
